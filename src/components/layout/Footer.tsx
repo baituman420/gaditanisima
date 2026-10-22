@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
       {/* Top Banner Track */}
       <div className="w-full border-b border-[#FAF7F2]/10 py-3.5 px-4 sm:px-8 lg:px-16 flex items-center justify-between text-[11px] font-label-caps text-[#FAF7F2]/70 tracking-[0.28em] uppercase">
         <span>Bilbao · Indautxu</span>
-        <span className="text-[#C29B38]">✦ &nbsp; ✦ &nbsp; ✦</span>
+        <span className="text-[#C29B38]">✦ &nbsp; <span className="text-rojo-flamenco">✦</span> &nbsp; ✦</span>
         <span>Cádiz · Bahía</span>
       </div>
 
@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
                 className="h-12 w-auto object-contain brightness-105"
               />
               <div className="flex flex-col text-left">
-                <span className="font-display-hero text-2xl text-[#FAF7F2] group-hover:text-[#C29B38] transition-colors tracking-tight font-medium">
+                <span className="font-display-hero text-2xl text-[#FAF7F2] group-hover:text-rojo-flamenco transition-colors tracking-tight font-medium">
                   {restaurantData.name}
                 </span>
                 <span className="font-label-caps text-[10px] tracking-[0.3em] text-[#C29B38] uppercase">
@@ -42,7 +42,7 @@ export const Footer: React.FC = () => {
 
             <div className="pt-2 flex items-center gap-4 text-xs font-label-caps tracking-widest text-[#FAF7F2]/75">
               <span className="flex items-center gap-1.5 text-[#C29B38] font-medium">
-                <Compass className="w-3.5 h-3.5" />
+                <Compass className="w-3.5 h-3.5 text-rojo-flamenco" />
                 <span>{restaurantData.address.coordinates}</span>
               </span>
             </div>
@@ -55,28 +55,28 @@ export const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-2.5 text-sm font-label-caps tracking-widest uppercase text-[#FAF7F2]/85">
               <li>
-                <Link to="/" className="hover:text-[#C29B38] flex items-center gap-1.5 transition-colors">
-                  <RotateCcw className="w-3 h-3 text-[#C29B38]" />
+                <Link to="/" className="hover:text-rojo-flamenco flex items-center gap-1.5 transition-colors group/nav">
+                  <RotateCcw className="w-3 h-3 text-[#C29B38] group-hover/nav:text-rojo-flamenco transition-colors" />
                   <span>Portada Cinemática</span>
                 </Link>
               </li>
               <li>
-                <Link to="/carta" className="hover:text-[#C29B38] transition-colors">
+                <Link to="/carta" className="hover:text-rojo-flamenco transition-colors">
                   La Carta
                 </Link>
               </li>
               <li>
-                <Link to="/nuestra-esencia" className="hover:text-[#C29B38] transition-colors">
+                <Link to="/nuestra-esencia" className="hover:text-rojo-flamenco transition-colors">
                   Nuestra Esencia
                 </Link>
               </li>
               <li>
-                <Link to="/el-local" className="hover:text-[#C29B38] transition-colors">
+                <Link to="/el-local" className="hover:text-rojo-flamenco transition-colors">
                   El Local
                 </Link>
               </li>
               <li>
-                <Link to="/visitanos" className="hover:text-[#C29B38] transition-colors">
+                <Link to="/visitanos" className="hover:text-rojo-flamenco transition-colors">
                   Visítanos & Reservas
                 </Link>
               </li>
@@ -98,22 +98,22 @@ export const Footer: React.FC = () => {
               </div>
 
               <div className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-[#C29B38] shrink-0" />
+                <Phone className="w-4 h-4 text-rojo-flamenco shrink-0" />
                 <a
                   href={`tel:${restaurantData.contact.phoneRaw}`}
-                  className="font-label-numeric font-medium text-[#FAF7F2] hover:text-[#C29B38] transition-colors tracking-wide"
+                  className="font-label-numeric font-medium text-[#FAF7F2] hover:text-rojo-flamenco transition-colors tracking-wide"
                 >
                   {restaurantData.contact.phone}
                 </a>
               </div>
 
               <div className="flex items-center gap-2.5">
-                <InstagramIcon className="w-4 h-4 text-[#C29B38] shrink-0" />
+                <InstagramIcon className="w-4 h-4 text-rojo-flamenco shrink-0" />
                 <a
                   href={restaurantData.contact.instagramUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-label-numeric font-medium text-[#FAF7F2] hover:text-[#C29B38] transition-colors tracking-wide"
+                  className="font-label-numeric font-medium text-[#FAF7F2] hover:text-rojo-flamenco transition-colors tracking-wide"
                 >
                   {restaurantData.contact.instagram}
                 </a>

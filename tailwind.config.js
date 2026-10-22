@@ -17,6 +17,8 @@ export default {
         "borgoña-profundo": "#4A121A",
         "borgoña-oscuro": "#2E0E14",
         "borgoña-intro": "#3b0717",
+        "rojo-flamenco": "#C71932",
+        "rojo-flamenco-oscuro": "#A81328",
         "carbon-cafe": "#241B1A",
         "tinta-profunda": "#1A1112",
         "tinta-suave": "#2D1D1F",

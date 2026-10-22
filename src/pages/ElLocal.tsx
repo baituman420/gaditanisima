@@ -14,7 +14,7 @@ export const ElLocal: React.FC = () => {
           {/* Chapter Marker */}
           <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-4 mb-8 border-b border-[#D8C7B5]/60 pb-4">
             <div className="flex items-center gap-3">
-              <span className="w-8 h-[1px] bg-oro-bronce"></span>
+              <span className="w-8 h-[1px] bg-rojo-flamenco"></span>
               <span className="font-label-caps text-xs tracking-[0.3em] text-oro-bronce uppercase font-semibold">
                 Espacio · Luz de Cal · Egaña 3
               </span>
@@ -27,7 +27,7 @@ export const ElLocal: React.FC = () => {
           {/* Monumental Headline */}
           <div className="max-w-3xl mb-12">
             <h1 className="font-display-hero text-4xl sm:text-6xl lg:text-7xl xl:text-8xl text-borgoña-profundo leading-none tracking-tight mb-4">
-              El Espacio
+              El <span className="italic font-serif text-rojo-flamenco">Espacio</span>
             </h1>
             <p className="font-display-hero italic text-xl sm:text-2xl text-terracota-suave font-normal leading-relaxed">
               Madera, mimbre, azulejo andaluz y la claridad de una taberna viva abierta a la luz de mediodía.
@@ -49,7 +49,7 @@ export const ElLocal: React.FC = () => {
               </div>
 
               {/* Architectural Plinth Caption */}
-              <div className="mt-4 sm:mt-0 sm:absolute sm:bottom-6 sm:left-6 max-w-lg bg-[#FAF7F2]/95 backdrop-blur-sm p-5 sm:p-6 border-l-2 border-oro-bronce shadow-md">
+              <div className="mt-4 sm:mt-0 sm:absolute sm:bottom-6 sm:left-6 max-w-lg bg-[#FAF7F2]/95 backdrop-blur-sm p-5 sm:p-6 border-l-2 border-rojo-flamenco shadow-md">
                 <span className="font-label-caps text-[10px] tracking-[0.25em] text-borgoña-profundo uppercase block mb-1 font-semibold">
                   Fotografía Real · Comedor Principal
                 </span>
@@ -193,12 +193,12 @@ export const ElLocal: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             
             {/* 01: La Barra */}
-            <div className="space-y-4 p-6 bg-[#FAF7F2] border border-arena-calida/60">
+            <div className="group space-y-4 p-6 bg-[#FAF7F2] border border-arena-calida/60 hover:border-rojo-flamenco/50 transition-colors">
               <div className="flex items-center justify-between pb-3 border-b border-arena-calida/40">
                 <span className="font-label-numeric text-base text-oro-bronce font-semibold">01</span>
-                <Wine className="w-5 h-5 text-borgoña-profundo" />
+                <Wine className="w-5 h-5 text-borgoña-profundo group-hover:text-rojo-flamenco transition-colors" />
               </div>
-              <h3 className="font-headline-md text-xl text-borgoña-profundo">
+              <h3 className="font-headline-md text-xl text-borgoña-profundo group-hover:text-rojo-flamenco transition-colors">
                 La Barra de Mostrador
               </h3>
               <p className="font-body-sm text-sm text-tinta-suave leading-relaxed font-normal">
@@ -207,12 +207,12 @@ export const ElLocal: React.FC = () => {
             </div>
 
             {/* 02: El Comedor Interior */}
-            <div className="space-y-4 p-6 bg-[#FAF7F2] border border-arena-calida/60">
+            <div className="group space-y-4 p-6 bg-[#FAF7F2] border border-arena-calida/60 hover:border-rojo-flamenco/50 transition-colors">
               <div className="flex items-center justify-between pb-3 border-b border-arena-calida/40">
                 <span className="font-label-numeric text-base text-oro-bronce font-semibold">02</span>
-                <UtensilsCrossed className="w-5 h-5 text-borgoña-profundo" />
+                <UtensilsCrossed className="w-5 h-5 text-borgoña-profundo group-hover:text-rojo-flamenco transition-colors" />
               </div>
-              <h3 className="font-headline-md text-xl text-borgoña-profundo">
+              <h3 className="font-headline-md text-xl text-borgoña-profundo group-hover:text-rojo-flamenco transition-colors">
                 El Comedor Hidráulico
               </h3>
               <p className="font-body-sm text-sm text-tinta-suave leading-relaxed font-normal">
@@ -221,12 +221,12 @@ export const ElLocal: React.FC = () => {
             </div>
 
             {/* 03: La Terraza en Calle Egaña (con foto real) */}
-            <div className="space-y-4 p-6 bg-[#FAF7F2] border border-arena-calida/60">
+            <div className="group space-y-4 p-6 bg-[#FAF7F2] border border-arena-calida/60 hover:border-rojo-flamenco/50 transition-colors">
               <div className="flex items-center justify-between pb-3 border-b border-arena-calida/40">
                 <span className="font-label-numeric text-base text-oro-bronce font-semibold">03</span>
-                <Users className="w-5 h-5 text-borgoña-profundo" />
+                <Users className="w-5 h-5 text-borgoña-profundo group-hover:text-rojo-flamenco transition-colors" />
               </div>
-              <h3 className="font-headline-md text-xl text-borgoña-profundo">
+              <h3 className="font-headline-md text-xl text-borgoña-profundo group-hover:text-rojo-flamenco transition-colors">
                 La Terraza en Egaña
               </h3>
               <p className="font-body-sm text-sm text-tinta-suave leading-relaxed font-normal">
@@ -283,10 +283,10 @@ export const ElLocal: React.FC = () => {
           </div>
           <Link
             to="/visitanos"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-borgoña-profundo hover:bg-borgoña-oscuro text-[#FAF7F2] font-label-caps text-xs tracking-[0.2em] uppercase border border-oro-viejo/50 transition-colors shadow-sm shrink-0"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-borgoña-profundo hover:bg-rojo-flamenco text-[#FAF7F2] font-label-caps text-xs tracking-[0.2em] uppercase border border-oro-viejo/50 hover:border-rojo-flamenco transition-colors shadow-sm shrink-0 group/cta"
           >
             <span>Cómo Llegar & Reservas</span>
-            <ArrowUpRight className="w-4 h-4 text-oro-viejo" />
+            <ArrowUpRight className="w-4 h-4 text-oro-viejo group-hover/cta:text-[#FAF7F2] transition-colors" />
           </Link>
         </div>
       </section>

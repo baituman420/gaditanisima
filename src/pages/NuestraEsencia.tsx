@@ -16,7 +16,7 @@ export const NuestraEsencia: React.FC = () => {
             {/* Monumental Typography */}
             <div className="lg:col-span-7">
               <div className="flex items-center gap-3 mb-6">
-                <span className="w-8 h-[1px] bg-oro-bronce"></span>
+                <span className="w-8 h-[1px] bg-rojo-flamenco"></span>
                 <span className="font-label-caps text-xs tracking-[0.3em] text-oro-bronce uppercase font-semibold">
                   Manifiesto · Capítulo I
                 </span>
@@ -24,7 +24,7 @@ export const NuestraEsencia: React.FC = () => {
 
               <h1 className="font-display-hero text-4xl sm:text-6xl lg:text-7xl xl:text-[84px] text-borgoña-profundo leading-[0.94] tracking-tight mb-8">
                 EL ALMA DE CÁDIZ<br />
-                <span className="italic font-normal text-terracota-suave font-serif">EN EL CORAZÓN</span><br />
+                <span className="italic font-normal text-rojo-flamenco font-serif">EN EL CORAZÓN</span><br />
                 DE BILBAO.
               </h1>
 
@@ -35,7 +35,7 @@ export const NuestraEsencia: React.FC = () => {
 
               <div className="flex flex-wrap items-center gap-6 pt-5 border-t border-[#D8C7B5]/60 text-xs font-label-caps tracking-widest text-tinta-suave uppercase font-medium">
                 <div className="flex items-center gap-2 text-oro-bronce font-semibold">
-                  <Sun className="w-4 h-4" />
+                  <Sun className="w-4 h-4 text-rojo-flamenco" />
                   <span>Luz de Cal & Salitre</span>
                 </div>
                 <div className="h-3 w-[1px] bg-arena-calida"></div>
@@ -77,7 +77,7 @@ export const NuestraEsencia: React.FC = () => {
       {/* 2. HILO CONDUCTOR EDITORIAL (Translúcido y ligero) */}
       <div className="w-full bg-[#F4EFEB]/40 border-b border-[#D8C7B5]/40 py-4 px-4 sm:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4 text-xs font-label-caps tracking-[0.25em] uppercase">
-          <span className="text-oro-bronce font-bold">Compás de Sal & Piedra</span>
+          <span className="text-rojo-flamenco font-bold">Compás de Sal & Piedra</span>
           <span className="text-tinta-suave hidden sm:inline font-medium">Egaña Hiribidea, 3 · Indautxu</span>
           <span className="text-tinta-profunda font-semibold">Taberna Tradicional Andaluza</span>
         </div>
@@ -102,7 +102,7 @@ export const NuestraEsencia: React.FC = () => {
 
               <div className="font-body-md text-base sm:text-lg text-tinta-profunda space-y-5 leading-relaxed font-normal">
                 <p>
-                  <span className="float-left text-6xl font-display-hero text-borgoña-profundo leading-none pr-3 pt-1">
+                  <span className="float-left text-6xl font-display-hero text-rojo-flamenco leading-none pr-3 pt-1">
                     G
                   </span>
                   aditanísima nace como un puente sincero entre la Bahía de Cádiz y las calles de Bilbao.
@@ -183,10 +183,10 @@ export const NuestraEsencia: React.FC = () => {
               <div className="pt-4">
                 <Link
                   to="/el-local"
-                  className="inline-flex items-center gap-2 text-xs font-label-caps tracking-widest uppercase text-borgoña-profundo hover:text-oro-viejo font-semibold transition-colors"
+                  className="inline-flex items-center gap-2 text-xs font-label-caps tracking-widest uppercase text-borgoña-profundo hover:text-rojo-flamenco font-semibold transition-colors group/link"
                 >
                   <span>Conoce Nuestro Espacio</span>
-                  <ArrowRight className="w-4 h-4" />
+                  <ArrowRight className="w-4 h-4 text-oro-bronce group-hover/link:text-rojo-flamenco transition-colors" />
                 </Link>
               </div>
 

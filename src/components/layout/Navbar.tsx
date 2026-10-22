@@ -34,7 +34,7 @@ export const Navbar: React.FC = () => {
               className="h-10 sm:h-11 w-auto object-contain transition-transform group-hover:scale-105"
             />
             <div className="flex flex-col text-left">
-              <span className="font-display-hero text-xl sm:text-2xl tracking-tight leading-none text-borgoña-profundo group-hover:text-oro-viejo transition-colors font-medium">
+              <span className="font-display-hero text-xl sm:text-2xl tracking-tight leading-none text-borgoña-profundo group-hover:text-rojo-flamenco transition-colors font-medium">
                 GADITANÍSIMA
               </span>
               <span className="font-label-caps text-[10px] tracking-[0.25em] text-oro-viejo mt-0.5 uppercase font-semibold">
@@ -48,9 +48,9 @@ export const Navbar: React.FC = () => {
           <Link
             to="/"
             onClick={closeMobileMenu}
-            className="hidden xl:inline-flex items-center gap-1.5 font-label-caps text-xs tracking-widest text-tinta-suave hover:text-borgoña-profundo transition-colors ml-1 uppercase font-medium"
+            className="hidden xl:inline-flex items-center gap-1.5 font-label-caps text-xs tracking-widest text-tinta-suave hover:text-rojo-flamenco transition-colors ml-1 uppercase font-medium group/link"
           >
-            <ArrowLeft className="w-3.5 h-3.5 text-oro-bronce" />
+            <ArrowLeft className="w-3.5 h-3.5 text-oro-bronce group-hover/link:text-rojo-flamenco transition-colors" />
             <span>Portada Cinemática</span>
           </Link>
         </div>
@@ -64,8 +64,8 @@ export const Navbar: React.FC = () => {
               className={({ isActive }) =>
                 `font-label-caps text-xs tracking-[0.2em] uppercase transition-all duration-200 py-1 ${
                   isActive
-                    ? 'text-borgoña-profundo border-b-2 border-borgoña-profundo font-bold'
-                    : 'text-tinta-profunda hover:text-borgoña-profundo border-b-2 border-transparent font-medium'
+                    ? 'text-borgoña-profundo border-b-2 border-rojo-flamenco font-bold'
+                    : 'text-tinta-profunda hover:text-rojo-flamenco border-b-2 border-transparent hover:border-rojo-flamenco/40 font-medium'
                 }`
               }
             >
@@ -78,7 +78,7 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center gap-3">
           <a
             href={`tel:${restaurantData.contact.phoneRaw}`}
-            className="hidden sm:inline-flex items-center gap-2 px-4 py-2 bg-borgoña-profundo hover:bg-borgoña-oscuro text-[#FAF7F2] transition-all duration-300 font-label-caps text-[11px] tracking-[0.18em] uppercase border border-oro-viejo/40 shadow-sm"
+            className="hidden sm:inline-flex items-center gap-2 px-4 py-2 bg-borgoña-profundo hover:bg-borgoña-oscuro text-[#FAF7F2] transition-all duration-300 font-label-caps text-[11px] tracking-[0.18em] uppercase border border-oro-viejo/40 hover:border-rojo-flamenco/60 shadow-sm"
             title="Llamar para reservar mesa"
           >
             <Calendar className="w-3.5 h-3.5 text-oro-viejo" />
@@ -89,7 +89,7 @@ export const Navbar: React.FC = () => {
           <button
             type="button"
             onClick={toggleMobileMenu}
-            className="lg:hidden p-2 text-borgoña-profundo hover:text-oro-viejo transition-colors focus:outline-none"
+            className="lg:hidden p-2 text-borgoña-profundo hover:text-rojo-flamenco transition-colors focus:outline-none"
             aria-label={mobileMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
             aria-expanded={mobileMenuOpen}
           >
@@ -105,7 +105,7 @@ export const Navbar: React.FC = () => {
             <Link
               to="/"
               onClick={closeMobileMenu}
-              className="flex items-center gap-2 py-2 font-label-caps text-xs tracking-widest text-oro-bronce uppercase border-b border-arena-calida/40 font-semibold"
+              className="flex items-center gap-2 py-2 font-label-caps text-xs tracking-widest text-oro-bronce hover:text-rojo-flamenco uppercase border-b border-arena-calida/40 font-semibold transition-colors"
             >
               <ArrowLeft className="w-3.5 h-3.5" />
               <span>Ver Portada Cinemática</span>
@@ -119,8 +119,8 @@ export const Navbar: React.FC = () => {
                 className={({ isActive }) =>
                   `font-label-caps text-sm tracking-[0.2em] uppercase py-2 transition-colors ${
                     isActive
-                      ? 'text-borgoña-profundo font-bold pl-2 border-l-2 border-borgoña-profundo'
-                      : 'text-tinta-profunda hover:text-borgoña-profundo font-medium'
+                      ? 'text-borgoña-profundo font-bold pl-2 border-l-2 border-rojo-flamenco'
+                      : 'text-tinta-profunda hover:text-rojo-flamenco font-medium'
                   }`
                 }
               >

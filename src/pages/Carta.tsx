@@ -21,14 +21,14 @@ export const Carta: React.FC = () => {
           {/* Metadata bar */}
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 pb-4 border-b border-[#D8C7B5]/40">
             <div className="flex items-center gap-3">
-              <span className="w-8 h-[1px] bg-oro-bronce"></span>
+              <span className="w-8 h-[1px] bg-rojo-flamenco"></span>
               <span className="font-label-caps text-xs tracking-[0.28em] text-oro-bronce uppercase font-semibold">
                 Registro Gastronómico · Edición Taberna
               </span>
             </div>
             <div className="flex items-center gap-3 text-xs font-label-numeric tracking-widest text-tinta-suave font-medium uppercase">
               <span>{restaurantData.address.street}</span>
-              <span>·</span>
+              <span className="text-rojo-flamenco font-bold">·</span>
               <span>{restaurantData.address.coordinates}</span>
             </div>
           </div>
@@ -37,7 +37,7 @@ export const Carta: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             <div className="lg:col-span-7">
               <h1 className="font-display-hero text-4xl sm:text-6xl lg:text-7xl xl:text-8xl text-borgoña-profundo tracking-tight leading-[0.95] mb-6">
-                La Carta
+                La <span className="italic font-serif text-rojo-flamenco">Carta</span>
               </h1>
               <p className="font-display-hero italic text-xl sm:text-2xl text-terracota-suave font-normal mb-6">
                 Sal, Fritura Limpia & Solera Andaluza en Bilbao.
@@ -97,7 +97,7 @@ export const Carta: React.FC = () => {
               className={`font-label-caps text-xs tracking-[0.2em] uppercase py-1 px-3 transition-colors ${
                 activeSectionId === 'all'
                   ? 'bg-borgoña-profundo text-[#FAF7F2]'
-                  : 'text-tinta-profunda hover:text-borgoña-profundo bg-pergamino/50 font-medium'
+                  : 'text-tinta-profunda hover:text-rojo-flamenco bg-pergamino/50 font-medium'
               }`}
             >
               Todos los Capítulos
@@ -109,7 +109,7 @@ export const Carta: React.FC = () => {
                 className={`font-label-caps text-xs tracking-[0.2em] uppercase py-1 px-3 transition-colors ${
                   activeSectionId === sec.id
                     ? 'bg-borgoña-profundo text-[#FAF7F2]'
-                    : 'text-tinta-profunda hover:text-borgoña-profundo bg-pergamino/50 font-medium'
+                    : 'text-tinta-profunda hover:text-rojo-flamenco bg-pergamino/50 font-medium'
                 }`}
               >
                 {sec.title.split('&')[0].trim()}
@@ -134,7 +134,7 @@ export const Carta: React.FC = () => {
                     <span className="font-label-numeric text-xs font-semibold text-oro-bronce">
                       0{idx + 1}
                     </span>
-                    <span className="w-6 h-[1px] bg-oro-bronce"></span>
+                    <span className="w-6 h-[1px] bg-rojo-flamenco/70"></span>
                     <span className="font-label-caps text-xs tracking-[0.25em] text-oro-bronce uppercase font-semibold">
                       Capítulo
                     </span>
@@ -161,10 +161,10 @@ export const Carta: React.FC = () => {
                   {section.items.map((item) => (
                     <div
                       key={item.id}
-                      className="group pb-5 border-b border-[#D8C7B5]/40 transition-colors hover:border-oro-bronce"
+                      className="group pb-5 border-b border-[#D8C7B5]/40 transition-colors hover:border-rojo-flamenco/50"
                     >
                       <div className="flex items-baseline justify-between gap-4">
-                        <h3 className="font-headline-md text-xl sm:text-2xl text-tinta-profunda group-hover:text-borgoña-profundo transition-colors font-medium">
+                        <h3 className="font-headline-md text-xl sm:text-2xl text-tinta-profunda group-hover:text-rojo-flamenco transition-colors font-medium">
                           {item.name}
                         </h3>
                         <div className="flex items-center gap-2 shrink-0">
@@ -220,7 +220,7 @@ export const Carta: React.FC = () => {
       {/* 3. FOOTNOTE / RESERVAS CALLOUT */}
       <section className="w-full bg-[#F4EFEB] py-14 px-4 sm:px-8 lg:px-16 border-t border-[#D8C7B5]">
         <div className="max-w-4xl mx-auto text-center space-y-4">
-          <Utensils className="w-7 h-7 text-oro-bronce mx-auto" />
+          <Utensils className="w-7 h-7 text-rojo-flamenco mx-auto" />
           <h3 className="font-headline-lg text-2xl sm:text-3xl text-borgoña-profundo">
             Mesa, Barra & Solera en la Calle Egaña
           </h3>
@@ -237,7 +237,7 @@ export const Carta: React.FC = () => {
             </a>
             <Link
               to="/visitanos"
-              className="inline-flex items-center gap-2 px-6 py-3 border border-borgoña-profundo text-borgoña-profundo hover:bg-pergamino font-label-caps text-xs tracking-[0.2em] uppercase transition-colors font-medium"
+              className="inline-flex items-center gap-2 px-6 py-3 border border-borgoña-profundo text-borgoña-profundo hover:border-rojo-flamenco hover:text-rojo-flamenco hover:bg-pergamino font-label-caps text-xs tracking-[0.2em] uppercase transition-colors font-medium"
             >
               <span>Ver Ubicación & Horarios</span>
               <ArrowUpRight className="w-4 h-4" />

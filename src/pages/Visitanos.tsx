@@ -14,14 +14,14 @@ export const Visitanos: React.FC = () => {
           {/* Overline track */}
           <div className="flex flex-wrap items-center justify-between gap-4 border-b border-[#D8C7B5]/40 pb-4">
             <div className="flex items-center gap-3">
-              <span className="w-8 h-[1px] bg-oro-bronce"></span>
+              <span className="w-8 h-[1px] bg-rojo-flamenco"></span>
               <span className="font-label-caps text-xs tracking-[0.28em] text-oro-bronce uppercase font-semibold">
                 Guía de Llegada & Localización
               </span>
             </div>
             <div className="flex items-center gap-2 text-xs font-label-numeric tracking-widest text-tinta-suave uppercase font-medium">
               <span>{restaurantData.address.coordinates}</span>
-              <span className="text-oro-bronce">·</span>
+              <span className="text-rojo-flamenco font-bold">·</span>
               <span className="text-borgoña-profundo font-semibold">Indautxu, Bilbao</span>
             </div>
           </div>
@@ -31,7 +31,7 @@ export const Visitanos: React.FC = () => {
             <div className="lg:col-span-7">
               <h1 className="font-display-hero text-4xl sm:text-6xl lg:text-7xl xl:text-8xl text-borgoña-profundo tracking-tight leading-[0.92] uppercase">
                 Encuéntranos<br />
-                <span className="italic font-normal font-serif text-terracota-suave lowercase">en</span> Bilbao
+                <span className="italic font-normal font-serif text-terracota-suave lowercase">en</span> <span className="italic font-serif text-rojo-flamenco lowercase">Bilbao</span>
               </h1>
             </div>
 
@@ -66,11 +66,11 @@ export const Visitanos: React.FC = () => {
             <div className="lg:col-span-6 flex flex-col space-y-6">
               <div className="relative bg-[#FAF7F2] border border-[#D8C7B5] p-6 sm:p-8 shadow-md">
                 
-                {/* Vintage Corner Ornaments */}
-                <div className="absolute top-2 left-2 text-oro-bronce text-xs">✦</div>
-                <div className="absolute top-2 right-2 text-oro-bronce text-xs">✦</div>
-                <div className="absolute bottom-2 left-2 text-oro-bronce text-xs">✦</div>
-                <div className="absolute bottom-2 right-2 text-oro-bronce text-xs">✦</div>
+                {/* Vintage Corner Ornaments in Flamenco Red */}
+                <div className="absolute top-2 left-2 text-rojo-flamenco text-xs">✦</div>
+                <div className="absolute top-2 right-2 text-rojo-flamenco text-xs">✦</div>
+                <div className="absolute bottom-2 left-2 text-rojo-flamenco text-xs">✦</div>
+                <div className="absolute bottom-2 right-2 text-rojo-flamenco text-xs">✦</div>
 
                 <div className="flex flex-col items-center text-center">
                   <span className="font-label-caps text-xs tracking-[0.28em] text-oro-bronce uppercase font-semibold mb-3">
@@ -96,10 +96,10 @@ export const Visitanos: React.FC = () => {
                   {/* Big Call Action Button */}
                   <a
                     href={`tel:${restaurantData.contact.phoneRaw}`}
-                    className="group w-full py-4 px-6 bg-borgoña-profundo hover:bg-borgoña-oscuro text-[#FAF7F2] transition-all duration-300 flex items-center justify-center gap-4 border border-oro-viejo/60 shadow-md"
+                    className="group w-full py-4 px-6 bg-borgoña-profundo hover:bg-rojo-flamenco text-[#FAF7F2] transition-all duration-300 flex items-center justify-center gap-4 border border-oro-viejo/60 hover:border-rojo-flamenco shadow-md"
                   >
-                    <div className="w-10 h-10 bg-[#FAF7F2]/10 group-hover:bg-oro-viejo flex items-center justify-center transition-colors">
-                      <Phone className="w-5 h-5 text-oro-viejo group-hover:text-borgoña-profundo" />
+                    <div className="w-10 h-10 bg-[#FAF7F2]/10 group-hover:bg-[#FAF7F2]/20 flex items-center justify-center transition-colors">
+                      <Phone className="w-5 h-5 text-oro-viejo group-hover:text-[#FAF7F2] transition-colors" />
                     </div>
                     <div className="flex flex-col text-left">
                       <span className="font-label-caps text-[10px] text-[#FAF7F2]/90 uppercase tracking-widest font-medium">
@@ -123,10 +123,10 @@ export const Visitanos: React.FC = () => {
                       href={restaurantData.contact.instagramUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-label-numeric text-sm text-borgoña-profundo hover:text-oro-bronce transition-colors font-semibold flex items-center gap-1"
+                      className="font-label-numeric text-sm text-borgoña-profundo hover:text-rojo-flamenco transition-colors font-semibold flex items-center gap-1 group/insta"
                     >
                       <span>{restaurantData.contact.instagram}</span>
-                      <ExternalLink className="w-3.5 h-3.5 text-oro-bronce" />
+                      <ExternalLink className="w-3.5 h-3.5 text-oro-bronce group-hover/insta:text-rojo-flamenco transition-colors" />
                     </a>
                   </div>
 
